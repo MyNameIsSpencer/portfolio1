@@ -1,0 +1,109 @@
+
+#circle {
+	width: 120px;
+	height: 120px;
+	background: red;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+}
+
+/* use 50% as value */
+
+
+#rectangle {
+	width: 170px;
+	height: 100px;
+	background: red;
+}
+
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 125px solid red;
+}
+
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 150px solid red;
+}
+
+
+#diamond {
+	width: 0;
+	height: 0;
+	border: 75px solid transparent;
+	border-bottom-color: red;
+	position: relative;
+	top: -75px;
+}
+#diamond:after {
+	content: '';
+	position: absolute;
+	left: -75px;
+	top: 75px;
+	width: 0;
+	height: 0;
+	border: 75px solid transparent;
+	border-top-color: red;
+}
+
+.oval1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-top-left-radius: 100px 50px;
+  border-top-right-radius:  100px 50px;
+}
+.oval1:before {
+  content: "Hello there";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background: green;
+  border-top-left-radius: 100px 50px;
+  border-top-right-radius:  100px 50px;
+  bottom: 40px;
+}
+
+#wave {
+  position: relative;
+	width: 170px;
+	height: 100px;
+	background: red;
+}
+
+#wave2 {
+  position: relative;
+  height: 70px;
+  width: 600px;
+  background: #e0efe3;
+}
+#wave2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 340px;
+  height: 80px;
+  background-color: white;
+  right: -5px;
+  top: 40px;
+}
+#wave2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 300px;
+  height: 70px;
+  background-color: #e0efe3;
+  left: 0;
+  top: 27px;
+}
