@@ -1,3 +1,10 @@
+:root {
+  --top-background-color: #F0F8FF;
+}
+
+#top {
+  background-color: var(--top-background-color);
+}
 
 #circle {
 	width: 120px;
@@ -53,31 +60,27 @@
 	border-top-color: red;
 }
 
-.oval1 {
-  width: 100px;
-  height: 100px;
-  background: red;
-  border-top-left-radius: 100px 50px;
-  border-top-right-radius:  100px 50px;
+
+
+.wave {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  /* background-color: #F0F8FF; */
+  background-color: lightblue;
 }
-.oval1:before {
-  content: "Hello there";
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 20px;
-  background: green;
-  border-top-left-radius: 100px 50px;
-  border-top-right-radius:  100px 50px;
-  bottom: 40px;
+.hill-container1 {
+  display: inline-block;
 }
 
-#wave {
-  position: relative;
-	width: 170px;
-	height: 100px;
-	background: red;
+
+.hill-container2 {
+  display: inline-block;
+  margin-left: -4px;
 }
+
+
+
 
 #wave2 {
   position: relative;
@@ -104,6 +107,38 @@
   width: 300px;
   height: 70px;
   background-color: #e0efe3;
+  background-color: purple;
+  left: 0;
+  top: 27px;
+}
+
+
+
+#wave3 {
+  position: relative;
+  height: 70px;
+  width: 200px;
+  background: #e0efe3;
+}
+#wave3:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 115px;
+  height: 80px;
+  background-color: teal;
+  right: -5px;
+  top: 40px;
+}
+#wave3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 100px;
+  height: 70px;
+  background-color: olive;
   left: 0;
   top: 27px;
 }
