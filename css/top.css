@@ -98,8 +98,8 @@
 
 .wave-container {
   position: absolute;
-  height: 6vw;
-  width: 8vw;
+  height: 140px;
+  width: 200px;
   background-color: tomato;
   overflow: hidden;
 
@@ -114,20 +114,19 @@
 }
 #wave-top {
   position: relative;
-  height: 1vw;
-  width: 8vw;
-  /* background: var(--top-background-color); */
-  background: black;
+  height: 15px;
+  width: 200px;
+  background: var(--top-background-color);
 }
 #wave-top:before {
   content: "";
   display: block;
   position: absolute;
   border-radius: 50% 100%;
-  width: 5vw;
-  height: 1vw;
-  background-color: beige;
-  /* background-color: tomato; */
+  width: 105px;
+  height: 35px;
+  /* background-color: beige; */
+  background-color: tomato;
   left: 0px;
   top: 0px;
 }
@@ -138,8 +137,8 @@
   border-radius: 50% 100%;
   width: 115px;
   height: 40px;
-  background-color: #e0efe3;
-  /* background-color: var(--top-background-color); */
+  /* background-color: #e0efe3; */
+  background-color: var(--top-background-color);
   right: 0;
   top: -15px;
 }
