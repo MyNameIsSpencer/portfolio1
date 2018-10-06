@@ -1,34 +1,50 @@
-.hill1 {
-  position: relative;
-  width: 90px;
-  height: 120px;
-  background: red;
-  border-top-left-radius: 100px 40px;
-  border-top-right-radius:  100px 50px;
-  margin-right: 0px;
-}
-.hill1:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 90px;
-  height: 30px;
-  background-color: #F0F8FF;
-  /* background-color: green; */
-  border-top-left-radius: 100px 50px;
-  border-top-right-radius: 100px 50px;
-  bottom: 0px;
+
+
+/*
+.deform  {
+width: 200px;
+height: 200px;
+-webkit-transform: scaleX(3);
+background-color: lightblue;
+left: 270px;
+position: absolute;
+top: 50px;
+border-radius: 50%;
 }
 
-
-
-
-
-
-.hill2 {
-  margin-bottom: -7px;
-  -ms-transform: rotate(180deg); /* IE 9 */
-  -webkit-transform: rotate(180deg); /* Safari */
-  transform: rotate(180deg); /* Standard syntax */
-
+.rotate {
+width: 100%;
+height: 100%;
+-webkit-animation: circle 10s infinite linear;
+-webkit-transform-origin: 50% 50%;
 }
+
+/*
+.counterrotate {
+width: 50px;
+height: 50px;
+-webkit-animation: ccircle 10s infinite linear;
+} */
+
+
+.inner {
+width: 50px;
+height: 50px;
+position: absolute;
+left: 0px;
+top: 0px;
+background-color: red;
+display: block;
+/* -webkit-transform: scaleX(0.33); */
+}
+
+@-webkit-keyframes circle {
+from {-webkit-transform: rotateZ(0deg)}
+to {-webkit-transform: rotateZ(360deg)}
+}
+
+@-webkit-keyframes ccircle {
+from {-webkit-transform: rotateZ(360deg)}
+to {-webkit-transform: rotateZ(0deg)}
+}
+ */

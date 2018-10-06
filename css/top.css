@@ -3,26 +3,46 @@
 }
 
 #top {
+  margin: auto -0.7% -0.7%;
   background-color: var(--top-background-color);
   height: 700px;
   border: 30px solid turquoise;
 }
 
+#orbit {
+
+}
+
+
+
 #rectangle-container {
   position: absolute;
+  margin-top: -5%;
+  margin-left: -10%;
+  animation: orbiter 10s linear infinite;
+  top: 50%;
+  left: 50%;
 }
 #rectangle {
-  width: 170px;
-  height: 100px;
+  width: 8vw;
+  height: 6vw;
   background: red;
 }
 
+
+
 #circle-container {
   position: absolute;
+  margin-top: -5%;
+  margin-left: -10%;
+  animation: orbiter 10s linear infinite;
+  animation-delay: -4s;
+  top: 50%;
+  left: 50%;
 }
 #circle {
-	width: 120px;
-	height: 120px;
+	width: 7vw;
+	height: 7vw;
 	background: green;
 	-moz-border-radius: 60px;
 	-webkit-border-radius: 60px;
@@ -33,22 +53,34 @@
 
 #trianle-container {
   position: absolute;
+  margin-top: -5%;
+  margin-left: -10%;
+  animation: orbiter 10s linear infinite;
+  animation-delay: -6s;
+  top: 50%;
+  left: 50%;
 }
 #triangle {
 	width: 0;
 	height: 0;
-	border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
-	border-bottom: 125px solid purple;
+	border-left: 4vw solid transparent;
+	border-right: 4vw solid transparent;
+	border-bottom: 7vw solid purple;
 }
 
 #diamond-container {
   position: absolute;
+  margin-top: -5%;
+  margin-left: -10%;
+  animation: orbiter 10s linear infinite;
+  animation-delay: -8s;
+  top: 50%;
+  left: 50%;
 }
 #diamond {
 	width: 0;
 	height: 0;
-	border: 75px solid transparent;
+	border: 5vw solid transparent;
 	border-bottom-color: brown;
 	position: relative;
 	top: -75px;
@@ -56,36 +88,46 @@
 #diamond:after {
 	content: '';
 	position: absolute;
-	left: -75px;
-	top: 75px;
+	left: -5vw;
+	top: 5vw;
 	width: 0;
 	height: 0;
-	border: 75px solid transparent;
+	border: 5vw solid transparent;
 	border-top-color: brown;
 }
 
 .wave-container {
   position: absolute;
-  height: 140px;
-  width: 200px;
+  height: 6vw;
+  width: 8vw;
   background-color: tomato;
   overflow: hidden;
+
+
+  margin-top: -5%;
+  margin-left: -10%;
+  animation: orbiter 10s linear infinite;
+  animation-delay: -2s;
+  top: 50%;
+  left: 50%;
+
 }
 #wave-top {
   position: relative;
-  height: 15px;
-  width: 200px;
-  background: var(--top-background-color);
+  height: 1vw;
+  width: 8vw;
+  /* background: var(--top-background-color); */
+  background: black;
 }
 #wave-top:before {
   content: "";
   display: block;
   position: absolute;
   border-radius: 50% 100%;
-  width: 105px;
-  height: 35px;
-  /* background-color: beige; */
-  background-color: tomato;
+  width: 5vw;
+  height: 1vw;
+  background-color: beige;
+  /* background-color: tomato; */
   left: 0px;
   top: 0px;
 }
@@ -96,8 +138,8 @@
   border-radius: 50% 100%;
   width: 115px;
   height: 40px;
-  /* background-color: #e0efe3; */
-  background-color: var(--top-background-color);
+  background-color: #e0efe3;
+  /* background-color: var(--top-background-color); */
   right: 0;
   top: -15px;
 }
@@ -138,3 +180,31 @@
   right: 0;
   top: 6px;
 }
+
+
+
+
+
+
+/* Orbit Practice */
+
+
+
+
+
+
+
+
+@keyframes orbiter {
+    0%  { transform: rotate(0deg) translateX(120%) translateY(120px) rotate(0deg) ; }
+    25%  { transform: rotate(90deg) translateX(120%) translateY(120px) rotate(-90deg) ; }
+    50%  { transform: rotate(180deg) translateX(120%) translateY(120px) rotate(-180deg) ; }
+    75%  { transform: rotate(270deg) translateX(120%) translateY(120px) rotate(-270deg) ; }
+    100%  { transform: rotate(360deg) translateX(120%) translateY(120px) rotate(-360deg) ; }}
+
+
+    /* scale(1);
+    scale(.75)
+    scale(.60)
+    scale(.75)
+    scale(1);  */
