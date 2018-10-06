@@ -4,48 +4,52 @@
 
 #top {
   background-color: var(--top-background-color);
+  height: 700px;
+  border: 30px solid turquoise;
 }
 
+#rectangle-container {
+  position: absolute;
+}
+#rectangle {
+  width: 170px;
+  height: 100px;
+  background: red;
+}
+
+#circle-container {
+  position: absolute;
+}
 #circle {
 	width: 120px;
 	height: 120px;
-	background: red;
+	background: green;
 	-moz-border-radius: 60px;
 	-webkit-border-radius: 60px;
 	border-radius: 60px;
 }
-
 /* use 50% as value */
 
 
-#rectangle {
-	width: 170px;
-	height: 100px;
-	background: red;
+#trianle-container {
+  position: absolute;
 }
-
-#triangle-up {
+#triangle {
 	width: 0;
 	height: 0;
 	border-left: 75px solid transparent;
 	border-right: 75px solid transparent;
-	border-bottom: 125px solid red;
+	border-bottom: 125px solid purple;
 }
 
-#triangle-down {
-	width: 0;
-	height: 0;
-	border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
-	border-top: 150px solid red;
+#diamond-container {
+  position: absolute;
 }
-
-
 #diamond {
 	width: 0;
 	height: 0;
 	border: 75px solid transparent;
-	border-bottom-color: red;
+	border-bottom-color: brown;
 	position: relative;
 	top: -75px;
 }
@@ -57,106 +61,23 @@
 	width: 0;
 	height: 0;
 	border: 75px solid transparent;
-	border-top-color: red;
+	border-top-color: brown;
 }
 
-
-
-.wave {
-  position: relative;
-  width: 250px;
-  height: 150px;
-  /* background-color: #F0F8FF; */
-  background-color: lightblue;
-}
-.hill-container1 {
-  display: inline-block;
-}
-
-
-.hill-container2 {
-  display: inline-block;
-  margin-left: -4px;
-}
-
-
-
-#waveoner {
-  position: relative;
-  height: 70px;
-  width: 600px;
-  background: #e0efe3;
-}
-#waveoner:before {
-  content: "";
-  display: block;
+.wave-container {
   position: absolute;
-  border-radius: 100% 50%;
-  width: 340px;
-  height: 80px;
-  background-color: white;
-  right: -5px;
-  top: 40px;
-}
-#waveoner:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 300px;
-  height: 70px;
-  background-color: #e0efe3;
-  left: 0;
-  top: 27px;
-}
-
-
-#wave2 {
-  position: relative;
-  height: 70px;
-  width: 600px;
-  background: #e0efe3;
-}
-#wave2:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 340px;
-  height: 80px;
-  background-color: white;
-  right: -5px;
-  top: 40px;
-}
-#wave2:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 300px;
-  height: 70px;
-  background-color: #e0efe3;
-  background-color: purple;
-  left: 0;
-  top: 27px;
-}
-
-
-
-
-.wave3-container {
   height: 140px;
   width: 200px;
   background-color: tomato;
   overflow: hidden;
 }
-#wave3 {
+#wave-top {
   position: relative;
   height: 15px;
   width: 200px;
   background: var(--top-background-color);
 }
-#wave3:before {
+#wave-top:before {
   content: "";
   display: block;
   position: absolute;
@@ -168,7 +89,7 @@
   left: 0px;
   top: 0px;
 }
-#wave3:after {
+#wave-top:after {
   content: "";
   display: block;
   position: absolute;
@@ -180,7 +101,7 @@
   right: 0;
   top: -15px;
 }
-#wave4 {
+#wave-bottom {
   position: relative;
   height: 30px;
   width: 200px;
@@ -193,7 +114,7 @@
   transform-origin: 50% 50%;
   margin-top: 100px;
 }
-#wave4:before {
+#wave-bottom:before {
   content: "";
   display: block;
   position: absolute;
@@ -205,7 +126,7 @@
   left: 0px;
   top: 15px;
 }
-#wave4:after {
+#wave-bottom:after {
   content: "";
   display: block;
   position: absolute;
