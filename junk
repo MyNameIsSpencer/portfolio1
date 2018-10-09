@@ -1,50 +1,183 @@
+HTML markup:
+This is where the animation takes place, though elements can also move outside the box if the y-value becomes large enough:
+
+<div id="field">
+<div id="ball"></div>
+<div id="ball2"></div>
+</div>
+CSS rules
+We define a box and place two balls at a starting postion of (0,0):
+
+<style type="text/css">
+
+  #field {
+    position: relative;
+    height: 300px;
+    background-color: lightgreen;
+  }
+  #ball, #ball2 {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+  }
+  #ball { background: red; }
+  #ball2 { background: blue; }
+
+</style>
+JavaScript code
+Every time requestAnimationFrame is called it receives a timestamp parameter which we can use to determine how long the animation has been running.
+
+In this case we've determined that we want the animation to take place over 5 seconds, and use the  progress variable to track how much of this has elapsed. This value will be between zero and one - zero placing the balls at the left of the box and one the point at which they reach the right.
+
+To keep things simple the x-axis motion is linear while the y-axis offset is calculated as a function of x. More creative animations could involve projectile or circular motion, and the progress meter itself can be made non-linear or variable.
+
+<script type="text/javascript">
+
+// Original JavaScript code by Chirp Internet: www.chirp.com.au
+// Please acknowledge use of this code by including this header.
+
+(function() {
+
+  window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+  var field = document.getElementById("field");
+  var ball = document.getElementById("ball");
+
+  var maxX = field.clientWidth - ball.offsetWidth;
+  var maxY = field.clientHeight - ball.offsetHeight;
+
+  var duration = 4; // seconds
+  var gridSize = 100; // pixels
+
+  var start = null;
+  var stretchFactor;
+
+  function step(timestamp)
+  {
+    var progress, x, y;
+    if(start === null) {
+      start = timestamp;
+      stretchFactor = 1 + (Math.random() * 3);
+    }
+
+    progress = (timestamp - start) / duration / 1000; // percent
+
+    x = stretchFactor * Math.sin(progress * 2 * Math.PI); // x = ƒ(t)
+    y = Math.cos(progress * 2 * Math.PI); // y = ƒ(t)
+
+    ball.style.left = maxX/2 + (gridSize * x) + "px";
+    ball.style.bottom = maxY/2 + (gridSize * y) + "px";
+
+    if(progress >= 1) start = null; // reset to start position
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+
+})();
+
+</script>
 
 
-/*
-.deform  {
-width: 200px;
-height: 200px;
--webkit-transform: scaleX(3);
-background-color: lightblue;
-left: 270px;
-position: absolute;
-top: 50px;
-border-radius: 50%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wave-container {
+  position: absolute;
+  height: 140px;
+  width: 200px;
+  background-color: tomato;
+  overflow: hidden;
+
+
+  margin-top: -5%;
+  margin-left: -10%;
+  animation: orbiter 10s linear infinite;
+  animation-delay: -2s;
+  top: 50%;
+  left: 50%;
+
 }
-
-.rotate {
-width: 100%;
-height: 100%;
--webkit-animation: circle 10s infinite linear;
--webkit-transform-origin: 50% 50%;
+#wave-top {
+  position: relative;
+  height: 15px;
+  width: 200px;
+  background: var(--top-background-color);
 }
-
-/*
-.counterrotate {
-width: 50px;
-height: 50px;
--webkit-animation: ccircle 10s infinite linear;
-} */
-
-
-.inner {
-width: 50px;
-height: 50px;
-position: absolute;
-left: 0px;
-top: 0px;
-background-color: red;
-display: block;
-/* -webkit-transform: scaleX(0.33); */
+#wave-top:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+  width: 105px;
+  height: 35px;
+  /* background-color: beige; */
+  background-color: tomato;
+  left: 0px;
+  top: 0px;
 }
-
-@-webkit-keyframes circle {
-from {-webkit-transform: rotateZ(0deg)}
-to {-webkit-transform: rotateZ(360deg)}
+#wave-top:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+  width: 115px;
+  height: 40px;
+  /* background-color: #e0efe3; */
+  background-color: var(--top-background-color);
+  right: 0;
+  top: -15px;
 }
-
-@-webkit-keyframes ccircle {
-from {-webkit-transform: rotateZ(360deg)}
-to {-webkit-transform: rotateZ(0deg)}
+#wave-bottom {
+  position: relative;
+  height: 30px;
+  width: 200px;
+  background: var(--top-background-color);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -ms-transform-origin: 50% 50%; /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari 3-8 */
+  -webkit-transform-origin: 50% 50%; /* Safari 3-8 */
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
+  margin-top: 100px;
 }
- */
+#wave-bottom:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+  width: 115px;
+  height: 40px;
+  /* background-color: beige; */
+  background-color: tomato;
+  left: 0px;
+  top: 15px;
+}
+#wave-bottom:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+  width: 100px;
+  height: 35px;
+  /* background-color: #e0efe3; */
+  background-color: var(--top-background-color);
+  right: 0;
+  top: 6px;
+}
