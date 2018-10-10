@@ -22,46 +22,17 @@
 
     <section id="top">
 
-       <div class="contain-demo">
-        <svg width="150" height="200">
-          <desc>First orange polyline demonstrating white fill on open path.</desc>
-          <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" fill="white" stroke="#D07735" stroke-width="6" />
-        </svg>
-        <svg width="150" height="200">
-          <desc>Second orange polyline demonstrating yellow fill on open path.</desc>
-          <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" fill="#F9F38C" stroke="#D07735" stroke-width="6" />
-        </svg>
-      </div>
-
 
       <div class="" style="width: 50vw; height: 40vh; background: yellow;">
         <svg viewBox="0 0 100 80">
-          <rect x="0" y="0" width="100%" height="100%" fill="purple"/>
+          <polyline
+            points="0 50,20 20,24 21,32 5,36 11, 44 16, 60 35, 72 30, 84 45, 88 47, 100 50"
+            class="mountain-line" />
+          <!-- <rect x="0" y="0" width="100%" height="100%" fill="purple"/> -->
         </svg>
       </div>
 
-      <svg height="40vh" width="50vw" fill="purple" background="yellow">
-        <polyline points="0 40,10 20,12 24,16 10,18 14" class="mountain-line" />
-      </svg>
 
-      <svg viewBox="0 0 20 20">
-        <rect x="0" y="0" width="100%" height="100%" fill="purple"/>
-      </svg>
-
-      <svg viewBox="0 0 100 100">
-        <!--
-        with relative unit such as percentage, the visual size
-        of the square looks unchange regardless of the viewBox
-        -->
-        <rect x="0" y="0" width="100%" height="100%" />
-
-        <!--
-        with a large viewBox the circle looks small
-        as it is using user units for the r attribute:
-        4 resolved against 100 as set in the viewBox
-        -->
-        <circle cx="50%" cy="50%" r="4" fill="white" />
-      </svg>
 
 
       <svg height="40vh" width="50vw">
@@ -89,14 +60,7 @@
         <line x1="18vw" y1="13vh" x2="25vw" y2="20vh" class="mountain-line" />
       </svg>
 
-      <!-- <svg width="600" height="300">
-        <path d="M100,200 C100,100  400,100  400,200"
-          fill="none" stroke="#000" stroke-width="2px" />
-      </svg> -->
 
-      <!-- <div class="triangle">
-
-      </div> -->
 
 
     </section>
