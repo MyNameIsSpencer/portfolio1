@@ -6,153 +6,20 @@
   margin: auto -0.7% -0.7%;
   background-color: var(--top-background-color);
   height: 700px;
-  border: 30px solid turquoise;
 }
 
-#orbit {
-
+.mountain-line {
+  stroke:rgb(255,0,0);
+  stroke-width:2;
+  fill: purple;
 }
 
-
-
-#rectangle-container {
+.triangle {
   position: absolute;
-  /* margin-top: -5%;
-  margin-left: -10%; */
-  animation: upDown 10s ease infinite;
-  /* top: 50%;
-  left: 50%; */
-}
-#rectangle {
-  width: 8vw;
-  height: 6vw;
-  background: red;
-}
-
-
-
-#circle-container {
-  position: absolute;
-  margin-top: -5%;
-  margin-left: -10%;
-  animation: orbiter 10s linear infinite;
-  animation-delay: -4s;
-  top: 50%;
-  left: 50%;
-}
-#circle {
-	width: 7vw;
-	height: 7vw;
-	background: green;
-	-moz-border-radius: 60px;
-	-webkit-border-radius: 60px;
-	border-radius: 60px;
-}
-/* use 50% as value */
-
-
-#trianle-container {
-  position: absolute;
-  margin-top: -5%;
-  margin-left: -10%;
-  animation: orbiter 10s linear infinite;
-  animation-delay: -6s;
-  top: 50%;
-  left: 50%;
-}
-#triangle {
+  bottom: 0vh;
 	width: 0;
 	height: 0;
 	border-left: 4vw solid transparent;
 	border-right: 4vw solid transparent;
-	border-bottom: 7vw solid purple;
+	border-bottom: 7vw solid grey;
 }
-
-#diamond-container {
-  position: absolute;
-  margin-top: -5%;
-  margin-left: -10%;
-  animation: orbiter 10s linear infinite;
-  animation-delay: -8s;
-  top: 50%;
-  left: 50%;
-}
-#diamond {
-	width: 0;
-	height: 0;
-	border: 5vw solid transparent;
-	border-bottom-color: brown;
-	position: relative;
-	top: -75px;
-}
-#diamond:after {
-	content: '';
-	position: absolute;
-	left: -5vw;
-	top: 5vw;
-	width: 0;
-	height: 0;
-	border: 5vw solid transparent;
-	border-top-color: brown;
-}
-
-.wave-container {
-  position: absolute;
-  width: 8vw;
-  height: 6vw;
-  background-color: tomato;
-  overflow: hidden;
-
-
-  margin-top: -5%;
-  margin-left: -10%;
-  animation: orbiter 10s linear infinite;
-  animation-delay: -2s;
-  top: 50%;
-  left: 50%;
-
-}
-#wave-top{
-  width: 8vw;
-  height: 6vw;
-  background: pink;
-}
-
-
-
-
-/* Orbit Practice */
-
-/* 
-@-webkit-keyframes upDown {
-    0% { bottom: 62.5vh;}
-    25%{ bottom: 85vh;}
-    50%{ bottom: 62.5vh;}
-    75%{ bottom: 40vh;}
-    100% { bottom: 62.5vh;}
-} */
-
-
-
-
-/* @keyframes orbiter {
-    0%  { transform: translateX(0vw) translateY(20vw) ; }
-    25%  { transform: translateX(30vw) translateY(0vw) ; }
-    50%  { transform: translateX(0vw) translateY(-20vw) ; }
-    75%  { transform: translateX(-30vw) translateY(0vw) ; }
-    100%  { transform: translateX(0vw) translateY(20vw) ; }} */
-
-
-@keyframes orbiter {
-    0%  { transform: rotate(0deg) translateX(120%) translateY(280%) rotate(0deg) ; }
-    25%  { transform: rotate(90deg) translateX(120%) translateY(280%) rotate(-90deg) ; }
-    50%  { transform: rotate(180deg) translateX(120%) translateY(280%) rotate(-180deg) ; }
-    75%  { transform: rotate(270deg) translateX(120%) translateY(280%) rotate(-270deg) ; }
-    100%  { transform: rotate(360deg) translateX(120%) translateY(280%) rotate(-360deg) ; }}
-
-
-    /* scale(1);
-    scale(.75)
-    scale(.60)
-    scale(.75)
-    scale(1);  */

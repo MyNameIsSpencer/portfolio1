@@ -181,3 +181,35 @@ To keep things simple the x-axis motion is linear while the y-axis offset is cal
   right: 0;
   top: 6px;
 }
+
+
+
+
+
+
+
+/* scale(1);
+scale(.75)
+scale(.60)
+scale(.75)
+scale(1);  */
+
+
+/*
+@-webkit-keyframes upDown {
+    0% { bottom: 62.5vh;}
+    25%{ bottom: 85vh;}
+    50%{ bottom: 62.5vh;}
+    75%{ bottom: 40vh;}
+    100% { bottom: 62.5vh;}
+} */
+
+
+
+
+/* @keyframes orbiter {
+    0%  { transform: translateX(0vw) translateY(20vw) ; }
+    25%  { transform: translateX(30vw) translateY(0vw) ; }
+    50%  { transform: translateX(0vw) translateY(-20vw) ; }
+    75%  { transform: translateX(-30vw) translateY(0vw) ; }
+    100%  { transform: translateX(0vw) translateY(20vw) ; }} */

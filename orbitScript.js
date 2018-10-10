@@ -12,8 +12,9 @@ function step() {
 
   let maxLeft = 90;
   let minLeft = 10;
-  let maxUp = 15;
-  let maxDown = 60;
+  let maxBottom = 15;
+  let minBottom = 60;
+  let widther = 15
 
 
   let duration = 5; // seconds
@@ -23,15 +24,16 @@ function step() {
 
   progress = ((new Date()) - start) / 1000;
   // let mover = Math.abs((progress * 20) - (maxLeft - 10));
-  let mover = Math.abs(progress - maxLeft)
+  let mover = Math.abs(progress * 10 - (maxLeft - widther))
 
 
 
-  shape.style.left = `${ maxLeft - mover + minLeft }vw`;
-  //
-  // if (leftValue <= minLeft) {
-  //   start = new Date();
-  // }
+  shape.style.left = `${ (maxLeft - widther) - mover + minLeft }vw`;
+  shape.style.bottom = `${leftValue}vw`
+
+  if (leftValue < minLeft) {
+    start = new Date();
+  }
 
   console.log(leftValue);
 
@@ -49,4 +51,4 @@ function step() {
 
 }
 
-setInterval(step, 20);
+setInterval(step, 1);

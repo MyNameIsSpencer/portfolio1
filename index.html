@@ -11,42 +11,98 @@
       <!-- <h1 id="heading-name">Spencer Kyonka</h1> -->
       <div id="menu">
         <div style="margin-top: 0.5vw">
-          <button onclick="topFunction('intro')"  title="Intro">Intro</button>
+          <button onclick="topFunction('about')"  title="About">About</button>
           <button onclick="topFunction('technical-skills')"  title="Technical Skills">Technical Skills</button>
-          <button onclick="topFunction('projects')"  title="Education">Projects</button>
-          <button onclick="topFunction('process')"  title="Product Process">Process</button>
+          <button onclick="topFunction('projects')"  title="Projects">Projects</button>
+          <!-- <button onclick="topFunction('process')"  title="Process">Process</button> -->
           <button onclick="topFunction('contact')"  title="Contact">Contact</button>
         </div>
       </div>
     </header>
 
     <section id="top">
-      <div id="orbit">
-        <div id="rectangle-container">
-          <div id="rectangle"> </div>
-        </div>
-        <div id="circle-container">
-          <div id="circle"> </div>
-        </div>
-        <div id="trianle-container">
-          <div id="triangle"> </div>
-        </div>
 
-        <div class="wave-container">
-          <div id="wave-top"> </div>
-          <div id="wave-bottom"> </div>
-        </div>
-
-        <div id="diamond-container">
-          <div id="diamond"> </div>
-        </div>
+       <div class="contain-demo">
+        <svg width="150" height="200">
+          <desc>First orange polyline demonstrating white fill on open path.</desc>
+          <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" fill="white" stroke="#D07735" stroke-width="6" />
+        </svg>
+        <svg width="150" height="200">
+          <desc>Second orange polyline demonstrating yellow fill on open path.</desc>
+          <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" fill="#F9F38C" stroke="#D07735" stroke-width="6" />
+        </svg>
       </div>
+
+
+      <div class="" style="width: 50vw; height: 40vh; background: yellow;">
+        <svg viewBox="0 0 100 80">
+          <rect x="0" y="0" width="100%" height="100%" fill="purple"/>
+        </svg>
+      </div>
+
+      <svg height="40vh" width="50vw" fill="purple" background="yellow">
+        <polyline points="0 40,10 20,12 24,16 10,18 14" class="mountain-line" />
+      </svg>
+
+      <svg viewBox="0 0 20 20">
+        <rect x="0" y="0" width="100%" height="100%" fill="purple"/>
+      </svg>
+
+      <svg viewBox="0 0 100 100">
+        <!--
+        with relative unit such as percentage, the visual size
+        of the square looks unchange regardless of the viewBox
+        -->
+        <rect x="0" y="0" width="100%" height="100%" />
+
+        <!--
+        with a large viewBox the circle looks small
+        as it is using user units for the r attribute:
+        4 resolved against 100 as set in the viewBox
+        -->
+        <circle cx="50%" cy="50%" r="4" fill="white" />
+      </svg>
+
+
+      <svg height="40vh" width="50vw">
+        <line x1="0vw" y1="40vh" x2="10vw" y2="20vh" class="mountain-line" />
+        <line x1="10vw" y1="20vh" x2="12vw" y2="24vh" class="mountain-line" />
+        <line x1="12vw" y1="24vh" x2="16vw" y2="10vh" class="mountain-line" />
+        <line x1="16vw" y1="10vh" x2="18vw" y2="14vh" class="mountain-line" />
+        <line x1="18vw" y1="14vh" x2="22vw" y2="16vh" class="mountain-line" />
+        <line x1="22vw" y1="16vh" x2="30vw" y2="30vh" class="mountain-line" />
+        <line x1="30vw" y1="30vh" x2="36vw" y2="26vh" class="mountain-line" />
+        <line x1="36vw" y1="26vh" x2="42vw" y2="37vh" class="mountain-line" />
+        <line x1="42vw" y1="37vh" x2="44vw" y2="35vh" class="mountain-line" />
+        <line x1="44vw" y1="35vh" x2="50vw" y2="40vh" class="mountain-line" />
+      </svg>
+
+      <svg height="20vh" width="40vw">
+        <line x1="0vw" y1="20vh" x2="5vw" y2="10vh" class="mountain-line" />
+        <line x1="5vw" y1="10vh" x2="6vw" y2="12vh" class="mountain-line" />
+
+        <line x1="6vw" y1="12vh" x2="8vw" y2="5vh" class="mountain-line" />
+        <line x1="8vw" y1="5vh" x2="9vw" y2="7vh" class="mountain-line" />
+        <line x1="9vw" y1="7vh" x2="11vw" y2="8vh" class="mountain-line" />
+        <line x1="11vw" y1="8vh" x2="15vw" y2="15vh" class="mountain-line" />
+        <line x1="15vw" y1="15vh" x2="18vw" y2="13vh" class="mountain-line" />
+        <line x1="18vw" y1="13vh" x2="25vw" y2="20vh" class="mountain-line" />
+      </svg>
+
+      <!-- <svg width="600" height="300">
+        <path d="M100,200 C100,100  400,100  400,200"
+          fill="none" stroke="#000" stroke-width="2px" />
+      </svg> -->
+
+      <!-- <div class="triangle">
+
+      </div> -->
 
 
     </section>
 
 
-    <script src="orbitScript.js"></script>
+    <!-- <script src="orbitScript.js"></script> -->
 
   </body>
 </html>
