@@ -8,18 +8,65 @@
   height: 700px;
 }
 
+.mountain-container {
+  position: absolute;
+}
+
+.mountain-big {
+  z-index: 12;
+}
+
 .mountain-line {
   stroke:rgb(255,0,0);
-  stroke-width:1;
+  stroke-width:0.5;
   fill: purple;
+}
+
+
+
+.oval-container {
+  position: absolute;
+  overflow: hidden;
+  top: 12vh;
+  left: 35vw;
+  width: 70vw;
+  height: 20vh;
+}
+
+.oval1 {
+  z-index: 10;
+  position: relative;
+  width: 170vw;
+  height: 40vh;
+  background: darkgreen;
+  border-radius: 50%;
+  /* border-top-left-radius: 20%;
+  border-top-right-radius: 10%; */
 }
 
 .triangle {
   position: absolute;
   bottom: 0vh;
-	width: 0;
-	height: 0;
-	border-left: 4vw solid transparent;
-	border-right: 4vw solid transparent;
-	border-bottom: 7vw solid grey;
+  width: 0;
+  height: 0;
+  border-left: 4vw solid transparent;
+  border-right: 4vw solid transparent;
+  border-bottom: 7vw solid grey;
 }
+
+/* #circle-container {
+  position: absolute;
+
+
+  animation-delay: -6s;
+  top: 40vh;
+  left: 45vw;
+} */
+.circle1 {
+
+	width: 70vw;
+	height: 20vw;
+	background: green;
+	border-radius: 5vw;
+}
+/* use 50% as value */
