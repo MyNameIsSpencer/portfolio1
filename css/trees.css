@@ -1,0 +1,49 @@
+.front-tree {
+  position: absolute;
+  bottom: 0;
+  left: 20vw;
+}
+.front-tree-trunk {
+  width: 1vw;
+  height: 20vw;
+  background: var(--wood-color);
+}
+.bottom-bush-left {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 4vw solid transparent;
+  border-right: 0vw solid transparent;
+  border-bottom: 6vw solid purple;
+  /* transform: rotate(-10deg); */
+}
+.bottom-bush-right {
+  position: absolute;
+  left: 4vw;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 0vw solid transparent;
+  border-right: 4vw solid transparent;
+  border-bottom: 6vw solid darkgrey;
+}
+
+.triangle-trunk {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-bottom: 20vw solid var(--wood-color);
+}
+
+.small-pine {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+  border-bottom: 5vw solid green;
+}

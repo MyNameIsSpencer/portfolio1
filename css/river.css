@@ -7,9 +7,10 @@
 .river-container {
   z-index: 20;
   position: absolute;
-  top: 40vh;
+  top: 35vh;
   background: transparent;
   width: 100vw;
+  transform: scaleY(0.7);
 
 }
 .river-left {
@@ -32,7 +33,7 @@
   position: absolute;
   background: var(--main-river-color);
   top: -2vh;
-  left: 50vw;
+  left: 49vw;
   width: 24vw;
   height: 8vh;
 }
@@ -41,7 +42,7 @@
   background: var(--main-river-color);
   top: -6vh;
   left: 68vw;
-  width: 31vw;
+  width: 32vw;
   height: 7vh;
 }
 
@@ -108,7 +109,7 @@
 }
 .river-bump4a {
   top: 5vh;
-  left: 50vw;
+  left: 49vw;
   position: absolute;
   width: 20vw;
   height: 5vh;
@@ -121,7 +122,8 @@
   left: 65vw;
   position: absolute;
   width: 10vw;
-  height: 5vh;
+  height: 5.5vh;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  background: blue;}
+  background: blue;
+}

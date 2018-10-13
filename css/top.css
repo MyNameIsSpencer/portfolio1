@@ -1,26 +1,32 @@
 :root {
   --top-background-color: #F0F8FF;
+  --wood-color: brown;
 }
 
 #top {
   /* overflow: hidden; */
   margin: auto -0.7% -0.7%;
   background-color: var(--top-background-color);
-  height: 300vh;
+  height: 100vh;
 }
 
 .mountain-container {
   position: absolute;
 }
 
-.mountain-big {
+.mountain-close {
   z-index: 12;
+  fill: purple
+}
+
+.mountain-far {
+  fill: pink;
 }
 
 .mountain-line {
-  stroke:rgb(255,0,0);
+  /* stroke:rgb(255,0,0); */
+  stroke: transparent;
   stroke-width:0.5;
-  fill: purple;
 }
 
 
@@ -34,7 +40,7 @@
   height: 20vh;
 }
 
-.hill1 {
+#hill1 {
   z-index: 10;
   position: relative;
   width: 170vw;
@@ -49,7 +55,7 @@
   z-index: 15;
   position: absolute;
   /* overflow: hidden; */
-  top: 20vh;
+  top: 30vh;
   left: -40vw;
   width: 80vw;
   height: 20vh;
