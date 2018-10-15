@@ -34,17 +34,17 @@
 .hill1-container {
   position: absolute;
   overflow: hidden;
-  top: 12vh;
+  top: 9vw;
   left: 35vw;
   width: 70vw;
-  height: 10vw;
+  height: 15vw;
 }
 
 #hill1 {
   z-index: 10;
   position: relative;
   width: 170vw;
-  height: 20vw;
+  height: 30vw;
   background: lime;
   border-radius: 50%;
   /* border-top-left-radius: 20%;
@@ -55,16 +55,16 @@
   z-index: 15;
   position: absolute;
   /* overflow: hidden; */
-  top: 30vh;
+  top: 17vw;
   left: -40vw;
   width: 80vw;
-  height: 20vh;
+  height: 10vw;
 }
 
 .hill2 {
   position: relative;
   width: 170vw;
-  height: 20vh;
+  height: 10vw;
   background: darkgreen;
   /* border-top-left-radius: 20%; */
   border-top-right-radius: 80%;
