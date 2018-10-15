@@ -37,14 +37,14 @@
   top: 12vh;
   left: 35vw;
   width: 70vw;
-  height: 20vh;
+  height: 10vw;
 }
 
 #hill1 {
   z-index: 10;
   position: relative;
   width: 170vw;
-  height: 40vh;
+  height: 20vw;
   background: lime;
   border-radius: 50%;
   /* border-top-left-radius: 20%;
