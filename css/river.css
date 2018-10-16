@@ -7,7 +7,7 @@
 .river-container {
   z-index: 20;
   position: absolute;
-  top: 60vh;
+  top: 40vh;
   background: transparent;
   width: 100vw;
   transform: scaleY(0.7);

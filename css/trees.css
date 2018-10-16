@@ -1,33 +1,31 @@
 .front-tree {
+  z-index: 25;
+  top: 20vw;
+  left: 90vw;
   position: absolute;
-  bottom: 0;
-  left: 20vw;
 }
-.front-tree-trunk {
-  width: 1vw;
-  height: 20vw;
-  background: var(--wood-color);
+.front-tree-trunk-left {
+  width: 2vw;
+  height: 10vw;
+  background: linear-gradient( -45deg, rgb(255, 162, 106), var(--wood-color) 40% );
 }
-.bottom-bush-left {
+.front-tree-bush-big {
   position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 4vw solid transparent;
-  border-right: 0vw solid transparent;
-  border-bottom: 6vw solid purple;
-  /* transform: rotate(-10deg); */
+  width: 8vw;
+  height: 8vw;
+  /* background: green; */
+  background: linear-gradient(to bottom left, lime 40%, green 75%);
+  border-radius: 50%;
 }
-.bottom-bush-right {
+.front-tree-bush-small {
   position: absolute;
-  left: 4vw;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 0vw solid transparent;
-  border-right: 4vw solid transparent;
-  border-bottom: 6vw solid darkgrey;
+  width: 7vw;
+  height: 7vw;
+  /* background: green; */
+  background: linear-gradient(to bottom left, lime 20%, green 65%);
+  border-radius: 50%;
 }
+
 
 .triangle-trunk {
   position: absolute;
