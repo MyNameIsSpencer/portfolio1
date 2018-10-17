@@ -5,27 +5,27 @@
   position: absolute;
 }
 .front-tree-trunk-left {
-  width: 2vw;
-  height: 10vw;
+  width: 1vw;
+  height: 5vw;
   background: linear-gradient( -45deg, rgb(255, 162, 106), var(--wood-color) 40% );
 }
 .front-tree-bush-big {
   position: absolute;
-  width: 8vw;
-  height: 8vw;
-  background: green;
-  /* background: linear-gradient(to bottom left, lime 60%, green 60%); */
+  width: 4vw;
+  height: 4vw;
+  background: lime;
+  /* background: linear-gradient(to bottom left, lime 10%, green 60%); */
   border-radius: 50%;
+  border: 0.5vw solid green;
 }
 .front-tree-bush-small {
   position: absolute;
-  width: 7vw;
-  height: 7vw;
-  background: green;
-  /* background: linear-gradient(to bottom left, lime 60%, green 60%); */
+  width: 4vw;
+  height: 4vw;
+  background: lime;
+  /* background: linear-gradient(to bottom left, lime 5%, green 80%); */
   border-radius: 50%;
 }
-
 
 .triangle-trunk {
   position: absolute;
